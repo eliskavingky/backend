@@ -10,8 +10,11 @@ const CONFIG = {
 
 async function startServer() {
   try {
+    if (!CONFIG.MONGO_URI) {
+      throw new Error('MongoDB URI is not set. Please check your secrets.');
+    }
     await mongoose.connect(CONFIG.MONGO_URI);
-    console.log('Connected to MongoDB');
+    console.log('Connected to MongoDB successfully');
     
     app.use(express.json());
     
