@@ -1,3 +1,4 @@
+
 {
   "name": "@fund-fun/be",
   "version": "1.0.0",
@@ -26,8 +27,5 @@
     "mongoose": "^8.12.1",
     "multer": "1.4.5-lts.2",
     "pinata": "^2.2.0"
-  }
-  "scripts": {
-    "start": "node index.js"
   }
 }
