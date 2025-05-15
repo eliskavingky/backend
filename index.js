@@ -1,6 +1,6 @@
 
-const { mongoConnect } = require('./fundgoal.fun/backend/dist/packages/mongodb/index.js');
-const { app } = require('./fundgoal.fun/backend/dist/server.js');
+const { app } = require('./fundgoal.fun/backend/dist/server');
+const { mongoConnect } = require('./fundgoal.fun/backend/dist/packages/mongodb');
 
 async function startServer() {
   try {
